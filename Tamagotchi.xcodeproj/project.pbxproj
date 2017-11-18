@@ -14,6 +14,7 @@
 		EAF67C761FC047CA0094C670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF67C741FC047CA0094C670 /* LaunchScreen.storyboard */; };
 		EAF67C811FC047CA0094C670 /* TamagotchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF67C801FC047CA0094C670 /* TamagotchiTests.swift */; };
 		EAF67C8C1FC047CA0094C670 /* TamagotchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF67C8B1FC047CA0094C670 /* TamagotchiUITests.swift */; };
+		EAF67CA81FC0503A0094C670 /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF67CA71FC0503A0094C670 /* Tamagotchi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EAF67C871FC047CA0094C670 /* TamagotchiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamagotchiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF67C8B1FC047CA0094C670 /* TamagotchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiUITests.swift; sourceTree = "<group>"; };
 		EAF67C8D1FC047CA0094C670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF67CA71FC0503A0094C670 /* Tamagotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EAF67C721FC047CA0094C670 /* Assets.xcassets */,
 				EAF67C741FC047CA0094C670 /* LaunchScreen.storyboard */,
 				EAF67C771FC047CA0094C670 /* Info.plist */,
+				EAF67CA71FC0503A0094C670 /* Tamagotchi.swift */,
 			);
 			path = Tamagotchi;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAF67C6E1FC047CA0094C670 /* ViewController.swift in Sources */,
+				EAF67CA81FC0503A0094C670 /* Tamagotchi.swift in Sources */,
 				EAF67C6C1FC047CA0094C670 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

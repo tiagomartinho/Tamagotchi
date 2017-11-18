@@ -1,36 +1,25 @@
-//
-//  TamagotchiUITests.swift
-//  TamagotchiUITests
-//
-//  Created by Tiago Martinho on 18/11/17.
-//  Copyright © 2017 Tiago Martinho. All rights reserved.
-//
-
 import XCTest
 
 class TamagotchiUITests: XCTestCase {
-        
+    
+    let app = XCUIApplication()
+
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
+        app.launch()
+    }
+    
+    func testFeedingUseCase() {
+        // Given that it Starts Hungry
+        XCTAssertEqual("100", app.staticTexts["hungriness value"].label)
+        XCTAssertEqual("0", app.staticTexts["fullness value"].label)
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        // When I feed it
+        app.buttons["Feed"].tap()
+
+        // then It not hungry anymore
+        XCTAssertEqual("99", app.staticTexts["hungriness value"].label)
+        XCTAssertEqual("1", app.staticTexts["fullness value"].label)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
 }
